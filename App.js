@@ -11,10 +11,10 @@ export default function App() {
   return (
     <NavigationContainer>
       <Tabs.Navigator
-        tabBarOptions={{
-          activeTintColor: "#FFA213",
-          inactiveTintColor: "gray",
-          labelStyle: {
+        screenOptions={{
+          tabBarActiveTintColor: "#FFA213",
+          tabBarInactiveTintColor: "gray",
+          tabBarLabelStyle: {
             fontSize: 15,
           },
         }}
