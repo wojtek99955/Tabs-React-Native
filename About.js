@@ -3,11 +3,11 @@ import styled from "styled-components";
 
 const Title = styled.Text`
   text-align: center;
-  font-size: 30px;
+  font-size: 50px;
   margin-top: 10px;
 `;
 const Description = styled.Text`
-  font-size: 15px;
+  font-size: 20px;
   margin: 15px 15px;
 `;
 
