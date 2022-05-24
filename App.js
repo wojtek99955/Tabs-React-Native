@@ -10,7 +10,15 @@ export default function App() {
   const Tabs = createBottomTabNavigator();
   return (
     <NavigationContainer>
-      <Tabs.Navigator>
+      <Tabs.Navigator
+        tabBarOptions={{
+          activeTintColor: "#FFA213",
+          inactiveTintColor: "gray",
+          labelStyle: {
+            fontSize: 15,
+          },
+        }}
+      >
         <Tabs.Screen
           name="Home"
           component={Home}
