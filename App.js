@@ -4,14 +4,27 @@ import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 import { NavigationContainer } from "@react-navigation/native";
 import Home from "./Home";
 import About from "./About";
+import Ionicons from "@expo/vector-icons/Ionicons";
 
 export default function App() {
   const Tabs = createBottomTabNavigator();
   return (
     <NavigationContainer>
       <Tabs.Navigator>
-        <Tabs.Screen name="Home" component={Home} />
-        <Tabs.Screen name="About" component={About} />
+        <Tabs.Screen
+          name="Home"
+          component={Home}
+          options={{
+            tabBarIcon: () => <Ionicons name="home" size={25} />,
+          }}
+        />
+        <Tabs.Screen
+          name="About"
+          component={About}
+          options={{
+            tabBarIcon: () => <Ionicons name="information-circle" size={25} />,
+          }}
+        />
       </Tabs.Navigator>
     </NavigationContainer>
   );
